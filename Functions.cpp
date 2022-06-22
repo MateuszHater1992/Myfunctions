@@ -47,3 +47,9 @@ int floorE(double v)
 int intLength(int a) {
     return floorE(logN(a, 10)) + 1;
 }
+
+
+//check if given value is the power of number 2 ex. 2, 4, 8, 1024
+bool isPowerOfTwo(int x) {
+    return x && (!(x & (x - 1)));
+}
